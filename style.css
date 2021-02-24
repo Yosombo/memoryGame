@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+body {
+  background-color: rgb(68, 87, 122);
+}
+h1 {
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+#starter {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgb(41, 68, 61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+#starter button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 4px;
+
+  background-color: rgb(88, 123, 145);
+  color: white;
+}
+#starter button:hover {
+  background-color: rgb(99, 139, 163);
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
+}
+#game {
+  background: rgb(41, 68, 61);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 1rem;
+}
+#game div {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.07);
+}
